@@ -3,106 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Developer Portfolio</title>
+    <title>Your Name - Game Developer Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
         header {
-            background: #333;
-            color: #fff;
+            background: #35424a;
+            color: #ffffff;
             padding: 20px 0;
             text-align: center;
         }
-        section {
-			margin: 10px;
-			position: relative;
-			overflow: hidden;
-			border-radius: 5px;
-			padding: 20px;
+        h1 {
+            margin: 0;
         }
-
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 5px;
+        }
         h2 {
-            color: #333;
+            color: #35424a;
         }
         .project {
             margin-bottom: 20px;
+			
+
+        }
+        a {
+            color: #35424a;
+            text-decoration: none;
         }
         footer {
             text-align: center;
-            padding: 10px 0;
-            background: #333;
-            color: #fff;
-            position: fixed;
-            width: 100%;
+            padding: 10px;
+            background: #35424a;
+            color: white;
+            position: relative;
             bottom: 0;
+            width: 100%;
         }
-		.background-video {
-			position: absolute;
-			top: 0;
-			left: 0;
-			min-width: 100%;
-			min-height: 100%;
-			height:auto;
-			width:auto;
-			z-index: -100;
-		}
     </style>
 </head>
 <body>
 
-
-		
 <header>
-    <h1>Game Developer Portfolio</h1>
-    <p>Welcome to my portfolio! I create immersive gaming experiences.</p>
-	
+    <h1>Your Name</h1>
+    <p>Game Developer</p>
 </header>
 
-
-
-<section id="about">
+<section>
     <h2>About Me</h2>
-    <p>I am a passionate game developer with experience in creating engaging games across various platforms. My skills include game design, programming, and graphic design.</p>
+    <p>A passionate game developer with [X years] of experience in creating engaging and immersive games. Proficient in [mention your skills, e.g., Unity, Unreal Engine, C#, etc.].</p>
 </section>
 
-<section id="projects">
-
-	<video autoplay loop muted class="background-video">
-        <source src="videos/TestVideo.mp4" type="video/mp4">
-    </video>
-
-    <h2>Projects</h2>
-    <div class="project">
-        <h3>Project Title 1</h3>
-        <p>Description of the project. Technologies used: Unity, C#.</p>
-        <a href="#">View Project</a>
-
-	
-    </div>
-    <div class="project">
-        <h3>Project Title 2</h3>
-        <p>Description of the project. Technologies used: Unreal Engine, C++.</p>
-        <a href="#">View Project</a>
-    </div>
-    <div class="project">
-        <h3>Project Title 3</h3>
-        <p>Description of the project. Technologies used: Godot, GDScript.</p>
-        <a href="#">View Project</a>
-    </div>
+<section>
+    <h2>Skills</h2>
+    <ul>
+        <li>Programming Languages: C#, C++, JavaScript</li>
+        <li>Game Engines: Unity, Unreal Engine</li>
+        <li>Tools: Blender, Photoshop, Git</li>
+        <li>Other Skills: Game design, UI/UX design, 3D modeling</li>
+    </ul>
 </section>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-    <p>LinkedIn: <a href="#">Your LinkedIn Profile</a></p>
+<section>
+
+
+		<h2>Projects</h2>
+		<div style="display:flex">
+		<div class="project">
+			<h3>[Project Title 1]</h3>
+			<p><strong>Description:</strong> Brief description of the game, its concept, and what makes it unique.</p>
+
+			<p><strong>Role:</strong> Your role in the project.</p>
+			<p><strong>Technologies Used:</strong> List the tools and technologies used.</p>
+			<p><a href="#" target="_blank">Play it here</a> or <a href="#" target="_blank">View on GitHub</a>
+
+			</p>
+
+		</div>
+
+		<div style= "display: flex;
+				justify-content: flex-end;
+				margin-left: auto;
+				margin-right: 0;
+				right: 0;
+				">
+					<video width="320" height="240" autoplay>
+				<source src="videos\TestVideo.mp4".mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+		</div>
+		</div>
+
+		<div style="display:flex">
+		<div class="project">
+
+			<h3>[Project Title 2]</h3>
+			<p><strong>Description:</strong> Brief description of the game, its concept, and what makes it unique.</p>
+			<p><strong>Role:</strong> Your role in the project.</p>
+			<p><strong>Technologies Used:</strong> List the tools and technologies used.</p>
+			<p><a href="#" target="_blank">Play it here</a> or <a href="#" target="_blank">View on GitHub</a></p>
+		</div>
+		
+				<div style= "display: flex;
+				justify-content: flex-end;
+				margin-left: auto;
+				margin-right: 0;
+				">
+					<video width="320" height="240"  autoplay muted>
+				<source src="videos\TestVideo.mp4".mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+		</div>
+		</div>
+
+		<div class="project">
+			<h3>[Project Title 3]</h3>
+			<p><strong>Description:</strong> Brief description of the game, its concept, and what makes it unique.</p>
+			<p><strong>Role:</strong> Your role in the project.</p>
+			<p><strong>Technologies Used:</strong> List the tools and technologies used.</p>
+			<p><a href="#" target="_blank">Play it here</a> or <a href="#" target="_blank">View on GitHub</a></p>
+		</div>
+
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>LinkedIn: <a href="#" target="_blank">Your LinkedIn Profile</a></p>
+    <p>GitHub: <a href="#" target="_blank">Your GitHub Profile</a></p>
 </section>
 
 <footer>
-    <p>&copy; 2025 Your Name</p>
+    <p>&copy; [Year] Your Name. All rights reserved.</p>
 </footer>
 
 </body>
