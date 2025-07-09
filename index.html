@@ -18,11 +18,13 @@
             text-align: center;
         }
         section {
-            padding: 20px;
-            margin: 10px;
-            background: #fff;
-            border-radius: 5px;
+			margin: 10px;
+			position: relative;
+			overflow: hidden;
+			border-radius: 5px;
+			padding: 20px;
         }
+
         h2 {
             color: #333;
         }
@@ -38,14 +40,29 @@
             width: 100%;
             bottom: 0;
         }
+		.background-video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			min-width: 100%;
+			min-height: 100%;
+			height:auto;
+			width:auto;
+			z-index: -100;
+		}
     </style>
 </head>
 <body>
 
+
+		
 <header>
     <h1>Game Developer Portfolio</h1>
     <p>Welcome to my portfolio! I create immersive gaming experiences.</p>
+	
 </header>
+
+
 
 <section id="about">
     <h2>About Me</h2>
@@ -53,11 +70,18 @@
 </section>
 
 <section id="projects">
+
+	<video autoplay loop muted class="background-video">
+        <source src="videos/TestVideo.mp4" type="video/mp4">
+    </video>
+
     <h2>Projects</h2>
     <div class="project">
         <h3>Project Title 1</h3>
         <p>Description of the project. Technologies used: Unity, C#.</p>
         <a href="#">View Project</a>
+
+	
     </div>
     <div class="project">
         <h3>Project Title 2</h3>
